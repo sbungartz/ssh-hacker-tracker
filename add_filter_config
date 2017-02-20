@@ -1,0 +1,5 @@
+#!/bin/sh
+# https://github.com/jond3k/ipynb_stripout
+git config filter.ipynb_strip_output.clean ./.ipynb_strip_output
+git config filter.ipynb_strip_output.smudge cat
+git config filter.ipynb_strip_output.required true
